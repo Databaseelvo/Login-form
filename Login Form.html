@@ -1,0 +1,107 @@
+<html>
+    <head>
+        <title>login form</title>
+        <style>
+            .login-container{
+                border: 3px solid yellow;
+                border-radius: 6px;
+                max-width: max-content;
+                padding: 40px 180px;
+                margin: 5px auto;
+                background-color: pink;
+            }
+            input[type=button]{
+                display: block;
+                background-color: blanchedalmond;
+                margin: 0 auto;
+            }
+            .checkbox{
+                color: brown;
+            }
+            .y{
+                list-style-type: none;
+            }
+            .j{
+                list-style-type: none;
+                color: black;
+            }
+            .q{
+                color: aqua;
+            }
+            .search{
+                color: lawngreen;
+            }
+            .i:hover{
+                background-color: chartreuse;
+            }
+            
+        
+        </style>
+    </head>
+    <body>
+<div class="login-container">
+    <form action="post">
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="text"id="email"Placeholder="enter email"name="email">
+        </div>
+
+<div class="form-group">
+    <label for="password">Password</label>
+    <input type="Password"id="Password"Placeholder="enter password"name="password"
+</div>
+<div class="radio">
+    <p><h4>How old are you?</h4></p>
+    <ol class="y">
+        <li><input type="radio" name="age"value="under 24" checked>under 24</li>
+        <li><input type="radio" name="age"value="25-34">25 to 34</li>
+        <li><input type="radio" name="age"value="35-44">35 to 44</li>
+        <li><input type="radio" name="age"value="over 45">45+</li>
+    </ol>
+</div>
+
+<div class="checkbox">
+    <p class="q">What type of music do you listen to?</p>
+    <ul class="j">
+        <li><input type="checkbox" name="genre"value="punk"checked>Punk rock</li>
+        <li><input type="checkbox" name="genre"value="indie"checked>Indie rock</li>
+        <li><input type="checkbox" name="genre"value="hiphop"checked>Hip hop</li>
+        <li><input type="checkbox"name="genre"value="rockabilly">Rockabilly</li>
+    </ul>
+    <div class="drop-down">
+        <p><h4>What is your favorite 80s band</h4>
+<select name="EightiesFave" size="6" multiple>
+    <option>The cure</option>
+    <option>Cocteau Twins</option>
+    <option selected>Tears for tears</option>
+    <option selected>Thompson Twins</option>
+    <option value="EBTG">Everything But theGirl</option>
+    <option>Depeche Mode</option>
+    <option>The Smiths</option>
+    <option>New Order</option> 
+</select>
+</p>
+<div class="list-box">
+    <p><h4>What 80s bands did you listen to?</h4>
+<select name="icecream" size="7" multiple>
+    <optgroup label="traditional">
+        <option>Vanilla</option>
+        <option>chocolate</option>
+    </optgroup>
+    <optgroup label="fancy">
+        <option>super praline</option>
+        <option>Nut surprise</option>
+        <option>Candy corn</option>
+    </optgroup>
+</select>
+</div>
+<div class="submission-button">
+    <p><button><input type="submit"></button>
+    <button><input type="reset" value="start over"></button></p>
+</div>
+<div class="search">
+    <p class="h"><h4>Didn't found your music search here.</h4></p>
+    <button class="i">search</button>
+</div>
+    </body>
+</html>
